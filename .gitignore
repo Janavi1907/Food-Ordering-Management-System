@@ -2,12 +2,12 @@
 target/
 *.class
 
-# IDE files
+# IDE
 .idea/
 .vscode/
 *.iml
 
-# Environment variables and secrets
+# Secrets
 .env
 .env.*
 !.env.example
