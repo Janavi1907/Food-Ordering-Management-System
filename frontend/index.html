@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Food Ordering System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">🍔 Foodie.</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="orders.html">My Orders</a></li>
+                <li><a href="cart.html">🛒 Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Food Menu Section -->
+    <section class="popular" id="food-menu">
+        <h2>Our Menu</h2>
+        <p>Choose your favourite food and add it to your cart.</p>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food..."
+                onkeyup="searchFood()"
+            >
+        </div>
+
+        <!-- Food Items Loaded from Java Backend -->
+        <div class="food-container" id="foodContainer">
+            <p>Loading food menu...</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Foodie. All Rights Reserved.</p>
+        <p>Food Ordering Management System | 1BCS302</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

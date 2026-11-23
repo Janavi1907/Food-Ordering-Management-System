@@ -1,0 +1,290 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fffaf3;
+    color: #333;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    color: #f26b21;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f26b21;
+}
+
+
+/* =========================
+   FOOD MENU SECTION
+========================= */
+
+.popular {
+    padding: 50px 8%;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.popular h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #292929;
+}
+
+.popular > p {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-container {
+    margin-bottom: 35px;
+}
+
+#searchInput {
+    width: 60%;
+    max-width: 600px;
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+}
+
+#searchInput:focus {
+    border-color: #f26b21;
+    box-shadow: 0 0 5px rgba(242, 107, 33, 0.2);
+}
+
+
+/* =========================
+   FOOD CONTAINER
+========================= */
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+/* =========================
+   FOOD CARDS
+========================= */
+
+.food-card {
+    width: 250px;
+    background-color: white;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.food-card h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    color: #292929;
+}
+
+.food-card p {
+    color: #777;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.food-card h4 {
+    color: #f26b21;
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+
+/* =========================
+   ADD TO CART BUTTON
+========================= */
+
+.food-card button {
+    background-color: #f26b21;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.food-card button:hover {
+    background-color: #d95412;
+}
+
+
+/* =========================
+   CART PAGE
+========================= */
+
+.cart-section {
+    padding: 40px 8%;
+    min-height: 70vh;
+    background-color: #fff8f0;
+}
+
+.cart-section h1 {
+    text-align: center;
+    color: #e85d04;
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e85d04;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #c94c00;
+}
+
+
+/* CART TOTAL */
+
+.cart-total {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.cart-total h2 {
+    margin-bottom: 20px;
+}
+
+.cart-total button {
+    padding: 12px 25px;
+    background-color: #e85d04;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.cart-total button:hover {
+    background-color: #c94c00;
+}
+
+
+/* =========================
+   MY ORDERS PAGE
+========================= */
+
+.orders-section {
+    min-height: 70vh;
+    padding: 40px 8%;
+    background-color: #fff8f0;
+}
+
+.orders-section h1 {
+    text-align: center;
+    color: #e85d04;
+    margin-bottom: 30px;
+}
+
+.order-card {
+    background-color: white;
+    padding: 22px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.order-card h3 {
+    color: #e85d04;
+    margin-bottom: 12px;
+}
+
+.order-card p {
+    margin: 8px 0;
+}
+
+.order-status {
+    font-weight: bold;
+    color: green;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
